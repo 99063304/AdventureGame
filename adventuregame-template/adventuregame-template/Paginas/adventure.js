@@ -14,11 +14,12 @@ var button3 = document.getElementById('button3');
 var bcharmander = document.createElement('IMG');
 var bivysaur = document.createElement('IMG');
 
- var backpackdiv = document.createElement('DIV');
+var backpackdiv = document.createElement('DIV');
 
 
 
- var pokemon = null;
+var pokemon = null;
+
 button1.addEventListener('click', story);
 button2.addEventListener('click', level);
 button3.addEventListener('click', instructions);
@@ -313,10 +314,7 @@ function battle(level) {
 
   levelbartext1.style.fontSize = '20px';
   levelbartext2.style.fontSize = '20px';
-  //
-  // var text1 = document.createTextNode('Lv '+ somcounter + '');
-  // var text2 = document.createTextNode('Lv '+ somcounter + '');
-  // text1.id = 'text1';
+
   levelbartext1.id = 'levelbartext1';
   levelbartext1.style.color = 'white';
   levelbartext2.id = 'levelbartext2'
@@ -324,8 +322,7 @@ function battle(level) {
   somcounter++;
   levelbartext1.innerHTML = 'Lv ' + somcounter;
   levelbartext2.innerHTML = 'Lv ' + somcounter;
-  // levelbartext1.appendChild(text1);
-  // levelbartext2.appendChild(text2);
+
 
   levelbar1.appendChild(levelbartext1);
   levelbar2.appendChild(levelbartext2);
@@ -373,10 +370,6 @@ function battle(level) {
   bivysaur.style.bottom = '140px';
   bivysaur.style.left = '500px';
   bcharmander.style.left = '0px';
-
-
-  // bsquirtle.setAttribute("src", "../afbeeldingen/Squirtle1.png");
-  // bbulbasaur.setAttribute('src', '../afbeeldingen/Bulbasaur1.png');
 
   Append(bcharmander);
   Append(bivysaur);
@@ -427,7 +420,7 @@ function OponontChoice() {
 
       charmeleon.style.display = 'none';
       pokemon = 'charmeleon';
-      // checkArray('charmeleon');
+
     };
     var blastoise = document.createElement('IMG');
     Artibute(blastoise,'blastoise');
@@ -645,8 +638,7 @@ function story() {
   var targetstoryP = document.createElement('P');
   var targetstory = document.createTextNode('You have been caught in the Pokémon battle. Defeat and catch all the Pokémon and use them to get to the Legendary Pokémon so it can save your mother. And return home with your Pokémon.');
 
-  // var present = document.createElement('Present');
-  // var presentverhaal
+
  paststoryp.style.color = 'white';
  pastP.style.color = 'white';
  presentP.style.color = 'white';
@@ -865,7 +857,6 @@ function AppendSection(naam) {
 
 }
 function AppendSection1(naam) {
-  // var backpack = document.getElementById('backPack');
   backpackdiv.appendChild(naam);
 
 }
