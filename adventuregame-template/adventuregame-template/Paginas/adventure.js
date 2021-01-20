@@ -572,6 +572,7 @@ function levels2 (naam) {
 
 function lost() {
   menu1.style.display = 'none';
+  backpackdiv.style.display = 'none';
  var lost1 = document.createElement('DIV');
  var youlose = document.createTextNode('You Lose');
  var paralose = document.createElement('P');
@@ -602,7 +603,6 @@ function backPack() {
  backpackdiv.style.backgroundSize = 'cover';
  backpackdiv.id = 'backPack';
  backpackdiv.style.marginLeft = '215px';
- backpackdiv.style.zIndex = '1';
  backpackdiv.style.paddingTop = '20px';
 
  backpackdiv.onclick = standaard;
